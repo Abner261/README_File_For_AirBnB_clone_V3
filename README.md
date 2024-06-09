@@ -106,7 +106,7 @@ Client can’t assume direct connection to server. Intermediary servers may impr
 	- Allow client to execute logic
 	- Example: JavaScript
 
-[AirBnB clone](https://github.com/Abner261/AirBnB_clone_v2/blob/master/README.md)
+[2] [AirBnB clone](https://github.com/Abner261/AirBnB_clone_v2/blob/master/README.md)
 
 ### Resources
 

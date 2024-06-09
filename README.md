@@ -49,27 +49,31 @@ REST API is **Resource-based**, a resource is an object and can be access by a U
 
 * A resource representation is accessible by a URI:
 
-GET /users: path for listing all user resources
-GET /users/12: path for the user id = 12
-GET /users/12/addresses: path for listing all addresses of the user id = 12
-POST /users: path for creating a user resource
-PUT /users/12: path for updating the user id = 12
-DELETE /users/12/addresses/2: path for deleting the address id = 2 of the user id = 12
-HTTP Response
-In the HTTP Response, the client should verify the information of two things:
+	- `GET /users`: path for listing all user resources
+	- `GET /users/12`: path for the user `id = 12`
+	- `GET /users/12/addresses`: path for listing all addresses of the user `id = 12`
+	- `POST /users`: path for creating a user resource
+	- `PUT /users/12`: path for updating the user `id = 12`
+	- `DELETE /users/12/addresses/2`: path for deleting the address `id = 2` of the user `id = 12`
 
-status code: result of the action
-body: JSON or XML representation of resources
-Some important status code:
+### HTTP Response
 
-200: OK
-201: created => after a POST request
-204: no content => can be return after a DELETE request
-400: bad request => the server doesn’t understand the request
-401: unauthorized => client user can’t be identified
-403: forbidden => client user is identified but not allowed to access a resource
-404: not found => resource doesn’t exist
-500: internal server error
+* In the HTTP Response, the client should verify the information of two things:
+
+	- status code: result of the action
+	- body: JSON or XML representation of resources
+
+* Some important status code:
+
+	- `200`: OK
+	- `201`: created => after a `POST` request
+	- `204`: no content => can be return after a `DELETE` request
+	- `400`: bad request => the server doesn’t understand the request
+	- `401`: unauthorized => client user can’t be identified
+	- `403`: forbidden => client user is identified but not allowed to access a resource
+	- `404`: not found => resource doesn’t exist
+	- `500`: internal server error
+
 2. Stateless
 The server is independent of the client. The server doesn’t store user client information/state. Each request contains enough context to process it (HTTP Headers, etc.)
 

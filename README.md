@@ -4,7 +4,7 @@
 
 * **For this project, we expect you to look at these concepts:**
 
-### REST API
+### [1] REST API
 
 REST API is a software architectural style for Backend.
 
@@ -22,21 +22,32 @@ REST API is **Resource-based**, a resource is an object and can be access by a U
 	- `first_name`, `last_name`, `date_of_birth`
 	- JSON format
 
-There are 6 constraints:
-1. Uniform Interface
-Define the interface between client-server
-Simple and can be split in small parts
-HTTP verbs
-GET:
-Read representation of a resource or a list of resources
-POST:
-Create a new resource
-PUT:
-Update an existing resource
-DELETE:
-Remove an existing resource
-URIs - resource name
-A resource representation is accessible by a URI:
+## There are 6 constraints:
+
+### 1. Uniform Interface
+
+- Define the interface between client-server
+- Simple and can be split in small parts
+
+* **HTTP verbs**
+
+  - `GET`:
+	- Read representation of a resource or a list of resources
+
+  - `POST`:
+
+	- Create a new resource
+  - `PUT`:
+
+	- Update an existing resource
+
+  - `DELETE`:
+
+	- Remove an existing resource
+
+### URIs - resource name
+
+* A resource representation is accessible by a URI:
 
 GET /users: path for listing all user resources
 GET /users/12: path for the user id = 12

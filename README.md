@@ -74,28 +74,34 @@ REST API is **Resource-based**, a resource is an object and can be access by a U
 	- `404`: not found => resource doesn’t exist
 	- `500`: internal server error
 
-2. Stateless
+### 2. Stateless
+
 The server is independent of the client. The server doesn’t store user client information/state. Each request contains enough context to process it (HTTP Headers, etc.)
 
 Some authentication systems like OAuth have to store information on the server side but they do it with REST API design.
 
-3. Cacheable
-All server responses (resource representation) are cacheable:
+### 3. Cacheable
 
-Explicit
-Implicit
-Negotiated
+* All server responses (resource representation) are cacheable:
+
+	- Explicit
+	- Implicit
+	- Negotiated
+
 Caches are here to improve performances. In a REST API, clients don’t care about the caching strategy, if the resource representation comes from a cache or from a database…
 
-4. Client-Server
+### 4. Client-Server
+
 REST API is designed to separate Client from the Server. The server doesn’t know who is talking to it. Clients are not concerned with data storage => the portability of client code is improved. Servers are not concerned with the user interface or user state so that servers can be simpler and more scalable
 
-5. Layered System
+### 5. Layered System
+
 Client can’t assume direct connection to server. Intermediary servers may improve system scalability by enabling load-balancing and by providing shared caches. Layers may also enforce security policies.
 
-6. Code on Demand (optional)
-Server can temporarily:
+### 6. Code on Demand (optional)
 
-Transfer logic to client
-Allow client to execute logic
-Example: JavaScript
+* Server can temporarily:
+
+	- Transfer logic to client
+	- Allow client to execute logic
+	- Example: JavaScript

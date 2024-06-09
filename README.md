@@ -16,9 +16,9 @@ REST API is **Resource-based**, a resource is an object and can be access by a U
 
 * Example:
 
-   - Resource: `Person` (John)
-   - Service: contact information (`GET`)
-   - Representation:
+  - Resource: `Person` (John)
+  - Service: contact information (`GET`)
+  - Representation:
 	- `first_name`, `last_name`, `date_of_birth`
 	- JSON format
 

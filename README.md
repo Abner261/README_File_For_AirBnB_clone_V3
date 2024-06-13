@@ -170,3 +170,35 @@ Client can’t assume direct connection to server. Intermediary servers may impr
 	- All your tests should be executed by using this command: `python3 -m unittest discover tests`
 	- You can also test file by file by using this command: `python3 -m unittest tests/test_models/test_base_model.py`
 	- We strongly encourage you to work together on test cases, so that you don’t miss any edge cases
+
+## More Info
+
+![Server side](https://raw.githubusercontent.com/Abner261/AirBnB_clone_V3/662ced8ce250c228ef3e45aa640fdda71855c5e2/Server%20side%20vs%20Client%20side.png)
+
+### Install Flask
+
+```sh
+$ pip3 install Flask
+```
+
+### Video library
+
+## Tasks
+
+0. [Restart from scratch!](AirBnB_clone_v3)
+
+No no no! We are already too far in the project to restart everything.
+
+But once again, let’s work on a new codebase.
+
+For this project you will fork this codebase:
+
+Update the repository name to AirBnB_clone_v3
+Update the README.md:
+Add yourself as an author of the project
+Add new information about your new contribution
+Make it better!
+If you’re the owner of this codebase, create a new repository called AirBnB_clone_v3 and copy over all files from AirBnB_clone_v2
+Repo:
+
+GitHub repository: AirBnB_clone_v3

@@ -203,3 +203,33 @@ But once again, let’s work on a new codebase.
 * **Repo:**
 
 	- GitHub repository: `AirBnB_clone_v3`
+
+1. [Never fail!](AirBnB_clone_v3)
+
+![Here we Go](https://raw.githubusercontent.com/Abner261/AirBnB_clone_V3/37c358debb6003d07df76910f469b88cc23f4741/Never%20fail.jpg)
+
+Since the beginning we’ve been using the `unittest` module, but do you know why `unittests` are so important? Because when you add a new feature, you refactor a piece of code, etc… you want to be sure you didn’t break anything.
+
+* At Holberton, we have a lot of tests, and they all pass! Just for the Intranet itself, there are:
+
+	- `5,213` assertions (as of 08/20/2018)
+	- `13,061` assertions (as of 01/25/2021)
+
+* The following requirements **must** be met for your project:
+
+	- all current tests must pass (don’t delete them…)
+	- add new tests as much as you can (tests are mandatory for some tasks)
+
+```sh
+guillaume@ubuntu:~/AirBnB_v3$ python3 -m unittest discover tests 2>&1 | tail -1
+OK
+guillaume@ubuntu:~/AirBnB_v3$ HBNB_ENV=test HBNB_MYSQL_USER=hbnb_test HBNB_MYSQL_PWD=hbnb_test_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db python3 -m unittest discover tests 2>&1 /dev/null | tail -n 1
+OK
+guillaume@ubuntu:~/AirBnB_v3$ 
+```
+
+**Repo:**
+
+- GitHub repository: `AirBnB_clone_v3`
+
+2. [Improve storage]()

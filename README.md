@@ -1,5 +1,11 @@
 ## 0x05. AirBnB clone - RESTful API
 
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Back-end](https://img.shields.io/badge/Back--end-black?style=for-the-badge)
+![API](https://img.shields.io/badge/API-red?style=for-the-badge)
+![Webserver](https://img.shields.io/badge/Webserver-blue?style=for-the-badge)
+![Flask](https://img.shields.io/badge/Flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+
 ### Concepts
 
 * **For this project, we expect you to look at these concepts:**

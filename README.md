@@ -179,7 +179,7 @@ Client can’t assume direct connection to server. Intermediary servers may impr
 
 ## More Info
 
-![Server side](https://raw.githubusercontent.com/Abner261/AirBnB_clone_V3/662ced8ce250c228ef3e45aa640fdda71855c5e2/Server%20side%20vs%20Client%20side.png)
+![Server side](https://github.com/Abner261/README_File_For_AirBnB_clone_V3/blob/master/Server%20side%20vs%20Client%20side.png?raw=true)
 
 ### Install Flask
 
@@ -212,7 +212,7 @@ But once again, let’s work on a new codebase.
 
 1. [Never fail!](AirBnB_clone_v3)
 
-![Here we Go](https://raw.githubusercontent.com/Abner261/AirBnB_clone_V3/37c358debb6003d07df76910f469b88cc23f4741/Never%20fail.jpg)
+![Here we Go](https://github.com/Abner261/README_File_For_AirBnB_clone_V3/blob/master/Never%20fail.jpg?raw=true)
 
 Since the beginning we’ve been using the `unittest` module, but do you know why `unittests` are so important? Because when you add a new feature, you refactor a piece of code, etc… you want to be sure you didn’t break anything.
 

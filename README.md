@@ -343,3 +343,27 @@ Repo:
 
 - GitHub repository: `AirBnB_clone_v3`
 - File: `api/__init__.py, api/v1/__init__.py, api/v1/views/__init__.py, api/v1/views/index.py, api/v1/app.py`
+
+4. Some stats?
+
+Create an endpoint that retrieves the number of each objects by type:
+
+In api/v1/views/index.py
+Route: /api/v1/stats
+You must use the newly added count() method from storage
+guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/stats
+{
+  "amenities": 47, 
+  "cities": 36, 
+  "places": 154, 
+  "reviews": 718, 
+  "states": 27, 
+  "users": 31
+}
+guillaume@ubuntu:~/AirBnB_v3$ 
+(No need to have a pretty rendered output, it’s a JSON, only the structure is important)
+
+Repo:
+
+GitHub repository: AirBnB_clone_v3
+File: api/v1/views/index.py

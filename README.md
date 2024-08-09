@@ -439,3 +439,93 @@ If the HTTP body request is not valid JSON, raise a 400 error with the message N
 Update the State object with all key-value pairs of the dictionary.
 Ignore keys: id, created_at and updated_at
 Returns the State object with the status code 200
+
+```sh
+guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/states/
+[
+  {
+    "__class__": "State", 
+    "created_at": "2017-04-14T00:00:02", 
+    "id": "8f165686-c98d-46d9-87d9-d6059ade2d99", 
+    "name": "Louisiana", 
+    "updated_at": "2017-04-14T00:00:02"
+  }, 
+  {
+    "__class__": "State", 
+    "created_at": "2017-04-14T16:21:42", 
+    "id": "1a9c29c7-e39c-4840-b5f9-74310b34f269", 
+    "name": "Arizona", 
+    "updated_at": "2017-04-14T16:21:42"
+  }, 
+...
+guillaume@ubuntu:~/AirBnB_v3$ 
+guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/states/8f165686-c98d-46d9-87d9-d6059ade2d99
+ {
+  "__class__": "State", 
+  "created_at": "2017-04-14T00:00:02", 
+  "id": "8f165686-c98d-46d9-87d9-d6059ade2d99", 
+  "name": "Louisiana", 
+  "updated_at": "2017-04-14T00:00:02"
+}
+guillaume@ubuntu:~/AirBnB_v3$ 
+guillaume@ubuntu:~/AirBnB_v3$ curl -X POST http://0.0.0.0:5000/api/v1/states/ -H "Content-Type: application/json" -d '{"name": "California"}' -vvv
+*   Trying 0.0.0.0...
+* TCP_NODELAY set
+* Connected to 0.0.0.0 (127.0.0.1) port 5000 (#0)
+> POST /api/v1/states/ HTTP/1.1
+> Host: 0.0.0.0:5000
+> User-Agent: curl/7.51.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 22
+> 
+* upload completely sent off: 22 out of 22 bytes
+* HTTP 1.0, assume close after body
+< HTTP/1.0 201 CREATED
+< Content-Type: application/json
+< Content-Length: 195
+< Server: Werkzeug/0.12.1 Python/3.4.3
+< Date: Sat, 15 Apr 2017 01:30:27 GMT
+< 
+{
+  "__class__": "State", 
+  "created_at": "2017-04-15T01:30:27.557877", 
+  "id": "feadaa73-9e4b-4514-905b-8253f36b46f6", 
+  "name": "California", 
+  "updated_at": "2017-04-15T01:30:27.558081"
+}
+* Curl_http_done: called premature == 0
+* Closing connection 0
+guillaume@ubuntu:~/AirBnB_v3$ 
+guillaume@ubuntu:~/AirBnB_v3$ curl -X PUT http://0.0.0.0:5000/api/v1/states/feadaa73-9e4b-4514-905b-8253f36b46f6 -H "Content-Type: application/json" -d '{"name": "California is so cool"}'
+{
+  "__class__": "State", 
+  "created_at": "2017-04-15T01:30:28", 
+  "id": "feadaa73-9e4b-4514-905b-8253f36b46f6", 
+  "name": "California is so cool", 
+  "updated_at": "2017-04-15T01:51:08.044996"
+}
+guillaume@ubuntu:~/AirBnB_v3$ 
+guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/states/feadaa73-9e4b-4514-905b-8253f36b46f6
+{
+  "__class__": "State", 
+  "created_at": "2017-04-15T01:30:28", 
+  "id": "feadaa73-9e4b-4514-905b-8253f36b46f6", 
+  "name": "California is so cool", 
+  "updated_at": "2017-04-15T01:51:08"
+}
+guillaume@ubuntu:~/AirBnB_v3$ 
+guillaume@ubuntu:~/AirBnB_v3$ curl -X DELETE http://0.0.0.0:5000/api/v1/states/feadaa73-9e4b-4514-905b-8253f36b46f6
+{}
+guillaume@ubuntu:~/AirBnB_v3$ 
+guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/states/feadaa73-9e4b-4514-905b-8253f36b46f6
+{
+  "error": "Not found"
+}
+guillaume@ubuntu:~/AirBnB_v3$ 
+```
+
+Repo:
+
+GitHub repository: AirBnB_clone_v3
+File: api/v1/views/states.py, api/v1/views/__init__.py

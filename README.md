@@ -708,7 +708,7 @@ Returns the Amenity object with the status code 200
 - GitHub repository: `AirBnB_clone_v3`
 - File: `api/v1/views/amenities.py, api/v1/views/__init__.py`
 
-9. User
+9. [User]()
 
 Create a new view for User object that handles all default RESTFul API actions:
 

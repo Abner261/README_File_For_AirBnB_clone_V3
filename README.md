@@ -672,7 +672,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 - GitHub repository: `AirBnB_clone_v3`
 - File: `api/v1/views/cities.py, api/v1/views/__init__.py`
 
-8. Amenity
+8. [Amenity]()
 
 Create a new view for Amenity objects that handles all default RESTFul API actions:
 

@@ -525,10 +525,10 @@ guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/states/fead
 guillaume@ubuntu:~/AirBnB_v3$ 
 ```
 
-Repo:
+**Repo:**
 
-GitHub repository: AirBnB_clone_v3
-File: api/v1/views/states.py, api/v1/views/__init__.py
+- GitHub repository: `AirBnB_clone_v3`
+- File: `api/v1/views/states.py, api/v1/views/__init__.py`
 
 7. [City]()
 

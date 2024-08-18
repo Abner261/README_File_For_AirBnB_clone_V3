@@ -368,7 +368,7 @@ Repo:
 GitHub repository: AirBnB_clone_v3
 File: api/v1/views/index.py
 
-5. Not found
+5. [Not found]()
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
 Designers are really creative when they have to design a “404 page”, a “Not found”… 34 brilliantly designed 404 error pages

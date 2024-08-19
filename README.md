@@ -363,10 +363,10 @@ guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/stats
 guillaume@ubuntu:~/AirBnB_v3$ 
 (No need to have a pretty rendered output, it’s a JSON, only the structure is important)
 
-Repo:
+**Repo:**
 
-GitHub repository: AirBnB_clone_v3
-File: api/v1/views/index.py
+- GitHub repository: `AirBnB_clone_v3`
+- File: `api/v1/views/index.py`
 
 5. [Not found]()
 mandatory

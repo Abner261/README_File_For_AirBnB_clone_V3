@@ -344,7 +344,7 @@ Repo:
 - GitHub repository: `AirBnB_clone_v3`
 - File: `api/__init__.py, api/v1/__init__.py, api/v1/views/__init__.py, api/v1/views/index.py, api/v1/app.py`
 
-4. Some stats?
+4. [Some stats?]()
 
 Create an endpoint that retrieves the number of each objects by type:
 

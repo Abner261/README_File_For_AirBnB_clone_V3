@@ -876,3 +876,10 @@ guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/cities/1da2
 * Closing connection 0
 guillaume@ubuntu:~/AirBnB_v3$ 
 ```
+
+**Repo:**
+
+- GitHub repository: `AirBnB_clone_v3`
+- File: `api/v1/app.py`
+
+13. [Place - Amenity]()

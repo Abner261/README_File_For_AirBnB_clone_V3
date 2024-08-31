@@ -910,5 +910,5 @@ If the Amenity is already linked to the Place, return the Amenity with the statu
 Returns the Amenity with the status code 201
 Repo:
 
-GitHub repository: AirBnB_clone_v3
-File: api/v1/views/places_amenities.py, api/v1/views/__init__.py
+- GitHub repository: `AirBnB_clone_v3`
+- File: `api/v1/views/places_amenities.py, api/v1/views/__init__.py`

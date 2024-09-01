@@ -912,3 +912,5 @@ Repo:
 
 - GitHub repository: `AirBnB_clone_v3`
 - File: `api/v1/views/places_amenities.py, api/v1/views/__init__.py`
+
+14. [Security improvements!]()

@@ -925,7 +925,10 @@ Update the method to_dict() of BaseModel to remove the password key except when 
 Each time a new User object is created or password updated, the password is hashed to a MD5 value
 In the database for DBStorage, the password stored is now hashed to a MD5 value
 In the file for FileStorage, the password stored is now hashed to a MD5 value
-Repo:
 
-GitHub repository: AirBnB_clone_v3
-File: models/base_model.py, models/user.py
+**Repo:**
+
+- GitHub repository: `AirBnB_clone_v3`
+- File: `models/base_model.py, models/user.py`
+
+15. [Search]()

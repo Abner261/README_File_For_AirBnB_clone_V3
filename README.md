@@ -1003,3 +1003,8 @@ guillaume@ubuntu:~/AirBnB_v3$ curl -X POST http://0.0.0.0:5000/api/v1/places_sea
 ...
 guillaume@ubuntu:~/AirBnB_v3$ 
 ```
+
+**Repo:**
+
+- GitHub repository: `AirBnB_clone_v3`
+- File: `api/v1/views/places.py`

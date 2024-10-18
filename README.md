@@ -352,6 +352,8 @@ Create an endpoint that retrieves the number of each objects by type:
 In api/v1/views/index.py
 Route: /api/v1/stats
 You must use the newly added count() method from storage
+
+```
 guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/stats
 {
   "amenities": 47, 
@@ -362,6 +364,8 @@ guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/stats
   "users": 31
 }
 guillaume@ubuntu:~/AirBnB_v3$ 
+
+```
 (No need to have a pretty rendered output, it’s a JSON, only the structure is important)
 
 **Repo:**

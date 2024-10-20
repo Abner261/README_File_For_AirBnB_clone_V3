@@ -376,13 +376,12 @@ guillaume@ubuntu:~/AirBnB_v3$
 - File: `api/v1/views/index.py`
 
 5. [Not found]()
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-Designers are really creative when they have to design a “404 page”, a “Not found”… 34 brilliantly designed 404 error pages
 
-Today it’s different, because you won’t use HTML and CSS, but JSON!
+- Designers are really creative when they have to design a “404 page”, a “Not found”… 34 brilliantly designed 404 error pages
 
-In api/v1/app.py, create a handler for 404 errors that returns a JSON-formatted 404 status code response. The content should be: "error": "Not found"
+- Today it’s different, because you won’t use HTML and CSS, but JSON!
+
+- In api/v1/app.py, create a handler for 404 errors that returns a JSON-formatted 404 status code response. The content should be: "error": "Not found"
 
 ```sh
 guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/nop
@@ -420,32 +419,32 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 Create a new view for State objects that handles all default RESTFul API actions:
 
-In the file api/v1/views/states.py
-You must use to_dict() to retrieve an object into a valid JSON
-Update api/v1/views/__init__.py to import this new file
-Retrieves the list of all State objects: GET /api/v1/states
+- In the file api/v1/views/states.py
+- You must use to_dict() to retrieve an object into a valid JSON
+- Update api/v1/views/__init__.py to import this new file
+- Retrieves the list of all State objects: GET /api/v1/states
 
-Retrieves a State object: GET /api/v1/states/<state_id>
+- Retrieves a State object: GET /api/v1/states/<state_id>
 
-If the state_id is not linked to any State object, raise a 404 error
-Deletes a State object:: DELETE /api/v1/states/<state_id>
+- If the state_id is not linked to any State object, raise a 404 error
+- Deletes a State object:: DELETE /api/v1/states/<state_id>
 
-If the state_id is not linked to any State object, raise a 404 error
-Returns an empty dictionary with the status code 200
-Creates a State: POST /api/v1/states
+- If the state_id is not linked to any State object, raise a 404 error
+- Returns an empty dictionary with the status code 200
+- Creates a State: POST /api/v1/states
 
-You must use request.get_json from Flask to transform the HTTP body request to a dictionary
-If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
-If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
-Returns the new State with the status code 201
-Updates a State object: PUT /api/v1/states/<state_id>
+- You must use request.get_json from Flask to transform the HTTP body request to a dictionary
+- If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
+- If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
+- Returns the new State with the status code 201
+- Updates a State object: PUT /api/v1/states/<state_id>
 
-If the state_id is not linked to any State object, raise a 404 error
-You must use request.get_json from Flask to transform the HTTP body request to a dictionary
-If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
-Update the State object with all key-value pairs of the dictionary.
-Ignore keys: id, created_at and updated_at
-Returns the State object with the status code 200
+- If the state_id is not linked to any State object, raise a 404 error
+- You must use request.get_json from Flask to transform the HTTP body request to a dictionary
+- If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
+- Update the State object with all key-value pairs of the dictionary.
+- Ignore keys: id, created_at and updated_at
+- Returns the State object with the status code 200
 
 ```sh
 guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/states/

@@ -540,22 +540,29 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 Same as State, create a new view for City objects that handles all default RESTFul API actions:
 
-In the file api/v1/views/cities.py
-You must use to_dict() to serialize an object into valid JSON
-Update api/v1/views/__init__.py to import this new file
-Retrieves the list of all City objects of a State: GET /api/v1/states/<state_id>/cities
+- In the file api/v1/views/cities.py
 
-If the state_id is not linked to any State object, raise a 404 error
-Retrieves a City object. : GET /api/v1/cities/<city_id>
+- You must use to_dict() to serialize an object into valid JSON
 
-If the city_id is not linked to any City object, raise a 404 error
-Deletes a City object: DELETE /api/v1/cities/<city_id>
+- Update api/v1/views/__init__.py to import this new file
 
-If the city_id is not linked to any City object, raise a 404 error
-Returns an empty dictionary with the status code 200
-Creates a City: POST /api/v1/states/<state_id>/cities
+- Retrieves the list of all City objects of a State: GET /api/v1/states/<state_id>/cities
 
-You must use request.get_json from Flask to transform the HTTP body request to a dictionary
+- If the state_id is not linked to any State object, raise a 404 error
+
+- Retrieves a City object. : GET /api/v1/cities/<city_id>
+
+- If the city_id is not linked to any City object, raise a 404 error
+
+- Deletes a City object: DELETE /api/v1/cities/<city_id>
+
+- If the city_id is not linked to any City object, raise a 404 error
+
+- Returns an empty dictionary with the status code 200
+
+- Creates a City: POST /api/v1/states/<state_id>/cities
+
+- You must use request.get_json from Flask to transform the HTTP body request to a dictionary
 If the state_id is not linked to any State object, raise a 404 error
 If the HTTP body request is not a valid JSON, raise a 400 error with the message Not a JSON
 If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name

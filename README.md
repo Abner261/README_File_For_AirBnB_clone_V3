@@ -817,10 +817,13 @@ Returns the Place object with the status code 200
 
 Create a new view for Review object that handles all default RESTFul API actions:
 
-In the file api/v1/views/places_reviews.py
-You must use to_dict() to retrieve an object into valid JSON
-Update api/v1/views/__init__.py to import this new file
-Retrieves the list of all Review objects of a Place: GET /api/v1/places/<place_id>/reviews
+- In the file api/v1/views/places_reviews.py
+
+- You must use to_dict() to retrieve an object into valid JSON
+
+- Update api/v1/views/__init__.py to import this new file
+
+- Retrieves the list of all Review objects of a Place: GET /api/v1/places/<place_id>/reviews
 
 If the place_id is not linked to any Place object, raise a 404 error
 Retrieves a Review object. : GET /api/v1/reviews/<review_id>

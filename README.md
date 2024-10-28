@@ -874,11 +874,11 @@ Create a new view for Review object that handles all default RESTFul API actions
 
 12. [HTTP access control (CORS)]()
 
-A resource makes a cross-origin HTTP request when it requests a resource from a different domain, or port, than the one the first resource itself serves.
+- A resource makes a cross-origin HTTP request when it requests a resource from a different domain, or port, than the one the first resource itself serves.
 
-Read the full definition here
+- Read the full definition here
 
-Why do we need this?
+- Why do we need this?
 
 Because you will soon start allowing a web client to make requests your API. If your API doesn’t have a correct CORS setup, your web client won’t be able to access your data.
 

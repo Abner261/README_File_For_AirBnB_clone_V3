@@ -977,16 +977,19 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 14. [Security improvements!]()
 
-Currently, the User object is designed to store the user password in cleartext.
+- Currently, the User object is designed to store the user password in cleartext.
 
-It’s super bad!
+- It’s super bad!
 
-To avoid that, improve the User object:
+- To avoid that, improve the User object:
 
-Update the method to_dict() of BaseModel to remove the password key except when it’s used by FileStorage to save data to disk. Tips: default parameters
-Each time a new User object is created or password updated, the password is hashed to a MD5 value
-In the database for DBStorage, the password stored is now hashed to a MD5 value
-In the file for FileStorage, the password stored is now hashed to a MD5 value
+- Update the method to_dict() of BaseModel to remove the password key except when it’s used by FileStorage to save data to disk. Tips: default parameters
+
+- Each time a new User object is created or password updated, the password is hashed to a MD5 value
+
+- In the database for DBStorage, the password stored is now hashed to a MD5 value
+
+- In the file for FileStorage, the password stored is now hashed to a MD5 value
 
 **Repo:**
 

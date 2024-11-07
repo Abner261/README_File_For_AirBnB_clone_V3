@@ -998,18 +998,21 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 15. [Search]()
 
-For the moment, the only way to list Place objects is via GET /api/v1/cities/<city_id>/places.
+- For the moment, the only way to list Place objects is via GET /api/v1/cities/<city_id>/places.
 
-Good, but not enough…
+- Good, but not enough…
 
-Update api/v1/views/places.py to add a new endpoint: POST /api/v1/places_search that retrieves all Place objects depending of the JSON in the body of the request.
+- Update api/v1/views/places.py to add a new endpoint: POST /api/v1/places_search that retrieves all Place objects depending of the JSON in the body of the request.
 
-The JSON can contain 3 optional keys:
+- The JSON can contain 3 optional keys:
 
-states: list of State ids
-cities: list of City ids
-amenities: list of Amenity ids
-Search rules:
+- states: list of State ids
+
+- cities: list of City ids
+
+- amenities: list of Amenity ids
+
+- Search rules:
 
 If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
 If the JSON body is empty or each list of all keys are empty: retrieve all Place objects

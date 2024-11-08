@@ -1014,14 +1014,21 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Search rules:
 
-If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
-If the JSON body is empty or each list of all keys are empty: retrieve all Place objects
-If states list is not empty, results should include all Place objects for each State id listed
-If cities list is not empty, results should include all Place objects for each City id listed
-Keys states and cities are inclusive. Search results should include all Place objects in storage related to each City in every State listed in states, plus every City listed individually in cities, unless that City was already included by states.
-Context:
-State A has 2 cities A1 and A2
-State B has 3 cities B1, B2 and B3
+- If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
+
+- If the JSON body is empty or each list of all keys are empty: retrieve all Place objects
+
+- If states list is not empty, results should include all Place objects for each State id listed
+
+- If cities list is not empty, results should include all Place objects for each City id listed
+
+- Keys states and cities are inclusive. Search results should include all Place objects in storage related to each City in every State listed in states, plus every City listed individually in cities, unless that City was already included by states.
+
+- Context:
+
+- State A has 2 cities A1 and A2
+
+- State B has 3 cities B1, B2 and B3
 A1 has 1 place
 A2 has 2 places
 B1 has 3 places

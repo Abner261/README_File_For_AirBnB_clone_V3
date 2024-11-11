@@ -847,13 +847,13 @@ Create a new view for Review object that handles all default RESTFul API actions
 
 - If the dictionary doesn’t contain the key user_id, raise a 400 error with the message Missing user_id
 
-- If the user_id is not linked to any User object, raise a 404 error
+- If the `user_id` is not linked to any User object, raise a 404 error
 
 - If the dictionary doesn’t contain the key text, raise a 400 error with the message Missing text
 
 - Returns the new Review with the status code 201
 
-- Updates a Review object: PUT /api/v1/reviews/<review_id>
+- Updates a Review object: PUT `/api/v1/reviews/<review_id>`
 
 - If the review_id is not linked to any Review object, raise a 404 error
 
@@ -863,7 +863,7 @@ Create a new view for Review object that handles all default RESTFul API actions
 
 - Update the Review object with all key-value pairs of the dictionary
 
-- Ignore keys: id, user_id, place_id, created_at and updated_at
+- Ignore keys: `id`, `user_id`, `place_id`, `created_at` and `updated_at`
 
 - Returns the Review object with the status code 200
 
@@ -932,11 +932,11 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Create a new view for the link between Place objects and Amenity objects that handles all default RESTFul API actions:
 
-- In the file api/v1/views/places_amenities.py
+- In the file `api/v1/views/places_amenities.py`
 
 - You must use to_dict() to retrieve an object into a valid JSON
 
-- Update api/v1/views/__init__.py to import this new file
+- Update `api/v1/views/__init__.py` to import this new file
 
 - Depending of the storage:
 
@@ -944,11 +944,11 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - FileStorage: list, add and remove Amenity ID in the list amenity_ids of a Place object
 
-- Retrieves the list of all Amenity objects of a Place: GET /api/v1/places/<place_id>/amenities
+- Retrieves the list of all Amenity objects of a Place: GET `/api/v1/places/<place_id>/amenities`
 
 - If the place_id is not linked to any Place object, raise a 404 error
 
-- Deletes a Amenity object to a Place: DELETE /api/v1/places/<place_id>/amenities/<amenity_id>
+- Deletes a Amenity object to a Place: DELETE `/api/v1/places/<place_id>/amenities/<amenity_id>`
 
 - If the place_id is not linked to any Place object, raise a 404 error
 
@@ -958,7 +958,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Returns an empty dictionary with the status code 200
 
-- Link a Amenity object to a Place: POST /api/v1/places/<place_id>/amenities/<amenity_id>
+- Link a Amenity object to a Place: POST `/api/v1/places/<place_id>/amenities/<amenity_id>`
 
 - No HTTP body needed
 

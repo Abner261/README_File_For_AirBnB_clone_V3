@@ -792,21 +792,33 @@ If the place_id is not linked to any Place object, raise a 404 error
 Returns an empty dictionary with the status code 200
 Creates a Place: POST /api/v1/cities/<city_id>/places
 
-You must use request.get_json from Flask to transform the HTTP request to a dictionary
-If the city_id is not linked to any City object, raise a 404 error
-If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
-If the dictionary doesn’t contain the key user_id, raise a 400 error with the message Missing user_id
-If the user_id is not linked to any User object, raise a 404 error
-If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
-Returns the new Place with the status code 201
-Updates a Place object: PUT /api/v1/places/<place_id>
+- You must use request.get_json from Flask to transform the HTTP request to a dictionary
 
-If the place_id is not linked to any Place object, raise a 404 error
-You must use request.get_json from Flask to transform the HTTP request to a dictionary
-If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
-Update the Place object with all key-value pairs of the dictionary
-Ignore keys: id, user_id, city_id, created_at and updated_at
-Returns the Place object with the status code 200
+- If the city_id is not linked to any City object, raise a 404 error
+
+- If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
+
+- If the dictionary doesn’t contain the key user_id, raise a 400 error with the message Missing user_id
+
+- If the user_id is not linked to any User object, raise a 404 error
+
+- If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
+
+- Returns the new Place with the status code 201
+
+- Updates a Place object: PUT `/api/v1/places/<place_id>`
+
+- If the place_id is not linked to any Place object, raise a 404 error
+
+- You must use request.get_json from Flask to transform the HTTP request to a dictionary
+
+- If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
+
+- Update the Place object with all key-value pairs of the dictionary
+
+- Ignore keys: id, user_id, city_id, created_at and updated_at
+
+- Returns the Place object with the status code 200
 
 **Repo:**
 

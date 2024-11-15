@@ -782,15 +782,19 @@ You must use to_dict() to retrieve an object into a valid JSON
 Update api/v1/views/__init__.py to import this new file
 Retrieves the list of all Place objects of a City: GET /api/v1/cities/<city_id>/places
 
-If the city_id is not linked to any City object, raise a 404 error
-Retrieves a Place object. : GET /api/v1/places/<place_id>
+- If the `city_id` is not linked to any City object, raise a 404 error
 
-If the place_id is not linked to any Place object, raise a 404 error
-Deletes a Place object: DELETE /api/v1/places/<place_id>
+- Retrieves a Place object. : GET `/api/v1/places/<place_id>`
 
-If the place_id is not linked to any Place object, raise a 404 error
-Returns an empty dictionary with the status code 200
-Creates a Place: POST /api/v1/cities/<city_id>/places
+- If the `place_id` is not linked to any Place object, raise a 404 error
+
+- Deletes a Place object: DELETE `/api/v1/places/<place_id>`
+
+- If the place_id is not linked to any Place object, raise a 404 error
+
+- Returns an empty dictionary with the status code 200
+
+- Creates a Place: POST `/api/v1/cities/<city_id>/places`
 
 - You must use request.get_json from Flask to transform the HTTP request to a dictionary
 

@@ -775,12 +775,15 @@ Returns the User object with the status code 200
 
 10. [Place]()
 
-Create a new view for Place objects that handles all default RESTFul API actions:
+- Create a new view for Place objects that handles all default RESTFul API actions:
 
-In the file api/v1/views/places.py
-You must use to_dict() to retrieve an object into a valid JSON
-Update api/v1/views/__init__.py to import this new file
-Retrieves the list of all Place objects of a City: GET /api/v1/cities/<city_id>/places
+- In the file api/v1/views/places.py
+
+- You must use to_dict() to retrieve an object into a valid JSON
+
+- Update api/v1/views/__init__.py to import this new file
+
+- Retrieves the list of all Place objects of a City: GET /api/v1/cities/<city_id>/places
 
 - If the `city_id` is not linked to any City object, raise a 404 error
 

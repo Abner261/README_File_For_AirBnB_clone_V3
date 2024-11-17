@@ -761,12 +761,17 @@ If the dictionary doesn’t contain the key password, raise a 400 error with the
 Returns the new User with the status code 201
 Updates a User object: PUT /api/v1/users/<user_id>
 
-If the user_id is not linked to any User object, raise a 404 error
-You must use request.get_json from Flask to transform the HTTP body request to a dictionary
-If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
-Update the User object with all key-value pairs of the dictionary
-Ignore keys: id, email, created_at and updated_at
-Returns the User object with the status code 200
+- If the user_id is not linked to any User object, raise a 404 error
+
+- You must use request.get_json from Flask to transform the HTTP body request to a dictionary
+
+- If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
+
+- Update the User object with all key-value pairs of the dictionary
+
+- Ignore keys: id, email, created_at and updated_at
+
+- Returns the User object with the status code 200
 
 **Repo:**
 

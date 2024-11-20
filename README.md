@@ -738,19 +738,23 @@ Create a new view for Amenity objects that handles all default RESTFul API actio
 
 9. [User]()
 
-Create a new view for User object that handles all default RESTFul API actions:
+- Create a new view for User object that handles all default RESTFul API actions:
 
-In the file api/v1/views/users.py
-You must use to_dict() to retrieve an object into a valid JSON
-Update api/v1/views/__init__.py to import this new file
-Retrieves the list of all User objects: GET /api/v1/users
+- In the file `api/v1/views/users.py`
 
-Retrieves a User object: GET /api/v1/users/<user_id>
+- You must use `to_dict()` to retrieve an object into a valid JSON
 
-If the user_id is not linked to any User object, raise a 404 error
-Deletes a User object:: DELETE /api/v1/users/<user_id>
+- Update `api/v1/views/__init__.py` to import this new file
 
-If the user_id is not linked to any User object, raise a 404 error
+- Retrieves the list of all User objects: GET `/api/v1/users`
+
+- Retrieves a User object: GET `/api/v1/users/<user_id>`
+
+- If the user_id is not linked to any User object, raise a 404 error
+
+- Deletes a User object:: DELETE `/api/v1/users/<user_id>`
+
+- If the user_id is not linked to any User object, raise a 404 error
 
 - Returns an empty dictionary with the status code 200
 

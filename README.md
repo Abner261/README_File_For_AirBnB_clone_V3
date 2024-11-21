@@ -687,7 +687,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 8. [Amenity]()
 
-Create a new view for Amenity objects that handles all default RESTFul API actions:
+* Create a new view for Amenity objects that handles all default RESTFul API actions:
 
 - In the file api/v1/views/amenities.py
 
@@ -707,7 +707,7 @@ Create a new view for Amenity objects that handles all default RESTFul API actio
 
 - Returns an empty dictionary with the status code 200
 
-- Creates a Amenity: POST /api/v1/amenities
+- Creates a Amenity: POST `/api/v1/amenities`
 
 - You must use request.get_json from Flask to transform the HTTP request to a dictionary
 
@@ -758,9 +758,9 @@ Create a new view for Amenity objects that handles all default RESTFul API actio
 
 - Returns an empty dictionary with the status code 200
 
-- Creates a User: POST /api/v1/users
+- Creates a User: POST `/api/v1/users`
 
-- You must use request.get_json from Flask to transform the HTTP body request to a dictionary
+- You must use `request.get_json` from Flask to transform the HTTP body request to a dictionary
 
 - If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
 

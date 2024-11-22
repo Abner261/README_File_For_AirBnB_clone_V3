@@ -563,17 +563,27 @@ Same as State, create a new view for City objects that handles all default RESTF
 - Creates a City: POST /api/v1/states/<state_id>/cities
 
 - You must use request.get_json from Flask to transform the HTTP body request to a dictionary
-- If the state_id is not linked to any State object, raise a 404 error
-- If the HTTP body request is not a valid JSON, raise a 400 error with the message Not a JSON
-- If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
-- Returns the new City with the status code 201
-- Updates a City object: PUT /api/v1/cities/<city_id>
 
-- If the city_id is not linked to any City object, raise a 404 error
-- You must use request.get_json from Flask to transform the HTTP body request to a dictionary
+- If the state_id is not linked to any State object, raise a 404 error
+
+- If the HTTP body request is not a valid JSON, raise a 400 error with the message Not a JSON
+
+- If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
+
+- Returns the new City with the status code 201
+
+- Updates a City object: PUT `/api/v1/cities/<city_id>`
+
+- If the `city_id` is not linked to any City object, raise a 404 error
+
+- You must use `request.get_json` from Flask to transform the HTTP body request to a dictionary
+
 - If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
+
 - Update the City object with all key-value pairs of the dictionary
-- Ignore keys: id, state_id, created_at and updated_at
+
+- Ignore keys: id, `state_id`, `created_at` and `updated_at`
+
 - Returns the City object with the status code 200
 
 ```sh
@@ -689,15 +699,15 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 * Create a new view for Amenity objects that handles all default RESTFul API actions:
 
-- In the file api/v1/views/amenities.py
+- In the file `api/v1/views/amenities.py`
 
 - You must use to_dict() to serialize an object into valid JSON
 
-- Update api/v1/views/__init__.py to import this new file
+- Update `api/v1/views/__init__.py` to import this new file
 
-- Retrieves the list of all Amenity objects: GET /api/v1/amenities
+- Retrieves the list of all Amenity objects: GET `/api/v1/amenities`
 
-- Retrieves a Amenity object: GET /api/v1/amenities/<amenity_id>
+- Retrieves a Amenity object: `GET /api/v1/amenities/<amenity_id>`
 
 - If the amenity_id is not linked to any Amenity object, raise a 404 error
 

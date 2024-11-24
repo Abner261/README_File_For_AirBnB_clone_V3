@@ -538,17 +538,17 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 7. [City]()
 
-Same as State, create a new view for City objects that handles all default RESTFul API actions:
+- Same as State, create a new view for City objects that handles all default RESTFul API actions:
 
 - In the file `api/v1/views/cities.py`
 
-- You must use to_dict() to serialize an object into valid JSON
+- You must use `to_dict()` to serialize an object into valid JSON
 
 - Update `api/v1/views/__init__.py` to import this new file
 
 - Retrieves the list of all City objects of a State: GET `/api/v1/states/<state_id>/cities`
 
-- If the state_id is not linked to any State object, raise a 404 error
+- If the `state_id` is not linked to any State object, raise a 404 error
 
 - Retrieves a City object. : GET `/api/v1/cities/<city_id>`
 

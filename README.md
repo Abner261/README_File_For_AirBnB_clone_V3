@@ -328,30 +328,40 @@ Ok, let starts:
 - register the blueprint app_views to your Flask instance app
 - declare a method to handle @app.teardown_appcontext that calls storage.close()
 - inside if ` __name__ == "__main__":`, run your Flask server (variable app) with:
-- host = environment variable HBNB_API_HOST or 0.0.0.0 if not defined
-- port = environment variable HBNB_API_PORT or 5000 if not defined
+
+- host = environment variable `HBNB_API_HOST` or 0.0.0.0 if not defined
+
+- port = environment variable `HBNB_API_PORT` or 5000 if not defined
 threaded=True
+
 - Create a folder views inside v1:
-- create a file __init__.py:
+
+- create a `file __init__.py:`
+
 - import Blueprint from flask doc
-- create a variable app_views which is an instance of Blueprint (url prefix must be /api/v1)
+
+- create a variable `app_views` which is an instance of Blueprint (url prefix must be /api/v1)
+
 - wildcard import of everything in the package api.v1.views.index => PEP8 will complain about it, don’t worry, it’s normal and this file (v1/views/__init__.py) won’t be check.
-- create a file index.py
-- import app_views from api.v1.views
-- create a route /status on the object app_views that returns a JSON: "status": "OK" (see example)
+- create a file `index.py`
+
+- import `app_views` from `api.v1.views`
+
+- create a route /status on the object `app_views` that returns a JSON: "status": "OK" (see example)
 
 **Repo:**
 
 - GitHub repository: `AirBnB_clone_v3`
+
 - File: `api/__init__.py, api/v1/__init__.py, api/v1/views/__init__.py, api/v1/views/index.py, api/v1/app.py`
 
 4. [Some stats?]()
 
 Create an endpoint that retrieves the number of each objects by type:
 
-- In api/v1/views/index.py
+- In `api/v1/views/index.py`
 
-- Route: /api/v1/stats
+- Route: `/api/v1/stats`
 
 - You must use the newly added count() method from storage
 
@@ -381,7 +391,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Today it’s different, because you won’t use HTML and CSS, but JSON!
 
-- In api/v1/app.py, create a handler for 404 errors that returns a JSON-formatted 404 status code response. The content should be: "error": "Not found"
+- In `api/v1/app.py`, create a handler for 404 errors that returns a JSON-formatted 404 status code response. The content should be: "error": "Not found"
 
 ```sh
 guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/nop
@@ -419,8 +429,9 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 Create a new view for State objects that handles all default RESTFul API actions:
 
-- In the file api/v1/views/states.py
-- You must use to_dict() to retrieve an object into a valid JSON
+- In the file `api/v1/views/states.py`
+
+- You must use `to_dict()` to retrieve an object into a valid JSON
 
 - Update `api/v1/views/__init__.py` to import this new file
 

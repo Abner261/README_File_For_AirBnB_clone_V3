@@ -291,9 +291,9 @@ For this task, you must make a pull request on GitHub.com, and ask at least one 
 
 3. [Status of your API]()
 
-It’s time to start your API!
+- It’s time to start your API!
 
-Your first endpoint (route) will be to return the status of your API:
+- Your first endpoint (route) will be to return the status of your API:
 
 ```sh
 guillaume@ubuntu:~/AirBnB_v3$ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_HOST=0.0.0.0 HBNB_API_PORT=5000 python3 -m api.v1.app
@@ -318,15 +318,24 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 Ok, let starts:
 
-- Create a folder api at the root of the project with an empty file __init__.py
+- Create a folder api at the root of the project with an empty `file __init__.py`
+
 - Create a folder v1 inside api:
-- create an empty file __init__.py
+
+- create an empty `file __init__.py`
+
 - create a file app.py:
+
 - create a variable app, instance of Flask
+
 - import storage from models
-- import app_views from api.v1.views
-- register the blueprint app_views to your Flask instance app
+
+- import `app_views` from `api.v1.views`
+
+- register the blueprint `app_views` to your Flask instance app
+
 - declare a method to handle @app.teardown_appcontext that calls storage.close()
+
 - inside if ` __name__ == "__main__":`, run your Flask server (variable app) with:
 
 - host = environment variable `HBNB_API_HOST` or 0.0.0.0 if not defined

@@ -240,14 +240,14 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 2. [Improve storage]()
 
-Update DBStorage and FileStorage, adding two new methods. All changes should be done in the branch storage_get_count:
+- Update DBStorage and FileStorage, adding two new methods. All changes should be done in the branch storage_get_count:
 
-A method to retrieve one object:
+- A method to retrieve one object:
 
-Prototype: def get(self, cls, id):
-cls: class
-id: string representing the object ID
-Returns the object based on the class and its ID, or None if not found
+- Prototype: def get(self, cls, id):
+- cls: class
+- id: string representing the object ID
+- Returns the object based on the class and its ID, or None if not found
 A method to count the number of objects in storage:
 
 Prototype: def count(self, cls=None):
@@ -282,7 +282,7 @@ First state: [State] (af14c85b-172f-4474-8a30-d4ec21f9795e) {'updated_at': datet
 guillaume@ubuntu:~/AirBnB_v3$
 ```
 
-For this task, you must make a pull request on GitHub.com, and ask at least one of your peer to review and merge it.
+- For this task, you must make a pull request on GitHub.com, and ask at least one of your peer to review and merge it.
 
 **Repo:**
 

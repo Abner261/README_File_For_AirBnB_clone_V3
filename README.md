@@ -245,15 +245,22 @@ guillaume@ubuntu:~/AirBnB_v3$
 - A method to retrieve one object:
 
 - Prototype: def get(self, cls, id):
-- cls: class
-- id: string representing the object ID
-- Returns the object based on the class and its ID, or None if not found
-A method to count the number of objects in storage:
 
-Prototype: def count(self, cls=None):
-cls: class (optional)
-Returns the number of objects in storage matching the given class. If no class is passed, returns the count of all objects in storage.
-Don’t forget to add new tests for these 2 methods on each storage engine.
+- cls: class
+
+- id: string representing the object ID
+
+- Returns the object based on the class and its ID, or None if not found
+
+- A method to count the number of objects in storage:
+
+- Prototype: def count(self, cls=None):
+
+- cls: class (optional)
+
+- Returns the number of objects in storage matching the given class. If no class is passed, returns the count of all objects in storage.
+
+- Don’t forget to add new tests for these 2 methods on each storage engine.
 
 ```sh
 guillaume@ubuntu:~/AirBnB_v3$ cat test_get_count.py

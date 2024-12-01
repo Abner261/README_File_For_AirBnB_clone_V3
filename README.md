@@ -82,9 +82,9 @@ REST API is **Resource-based**, a resource is an object and can be access by a U
 
 ### 2. Stateless
 
-The server is independent of the client. The server doesn’t store user client information/state. Each request contains enough context to process it (HTTP Headers, etc.)
+- The server is independent of the client. The server doesn’t store user client information/state. Each request contains enough context to process it (HTTP Headers, etc.)
 
-Some authentication systems like OAuth have to store information on the server side but they do it with REST API design.
+- Some authentication systems like OAuth have to store information on the server side but they do it with REST API design.
 
 ### 3. Cacheable
 
@@ -94,15 +94,15 @@ Some authentication systems like OAuth have to store information on the server s
 	- Implicit
 	- Negotiated
 
-Caches are here to improve performances. In a REST API, clients don’t care about the caching strategy, if the resource representation comes from a cache or from a database…
+- Caches are here to improve performances. In a REST API, clients don’t care about the caching strategy, if the resource representation comes from a cache or from a database…
 
 ### 4. Client-Server
 
-REST API is designed to separate Client from the Server. The server doesn’t know who is talking to it. Clients are not concerned with data storage => the portability of client code is improved. Servers are not concerned with the user interface or user state so that servers can be simpler and more scalable
+- REST API is designed to separate Client from the Server. The server doesn’t know who is talking to it. Clients are not concerned with data storage => the portability of client code is improved. Servers are not concerned with the user interface or user state so that servers can be simpler and more scalable
 
 ### 5. Layered System
 
-Client can’t assume direct connection to server. Intermediary servers may improve system scalability by enabling load-balancing and by providing shared caches. Layers may also enforce security policies.
+- Client can’t assume direct connection to server. Intermediary servers may improve system scalability by enabling load-balancing and by providing shared caches. Layers may also enforce security policies.
 
 ### 6. Code on Demand (optional)
 

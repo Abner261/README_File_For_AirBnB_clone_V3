@@ -1,4 +1,4 @@
-## 0x05. AirBnB clone - RESTful API
+### 0x05. AirBnB clone - RESTful API
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Back-end](https://img.shields.io/badge/Back--end-black?style=for-the-badge)
@@ -12,13 +12,13 @@
 
 ### [1] REST API
 
-REST API is a software architectural style for Backend.
+- REST API is a software architectural style for Backend.
 
 **REST = “REpresentational State Transfer”. API = Application Programming Interface**
 
-Its purpose is to induce performance, scalability, simplicity, modifiability, visibility, portability, and reliability.
+- Its purpose is to induce performance, scalability, simplicity, modifiability, visibility, portability, and reliability.
 
-REST API is **Resource-based**, a resource is an object and can be access by a URI. An object is “displayed”/transferred via a **representation** (typically JSON). HTTP methods will be actions on a resource.
+- REST API is **Resource-based**, a resource is an object and can be access by a URI. An object is “displayed”/transferred via a **representation** (typically JSON). HTTP methods will be actions on a resource.
 
 * Example:
 

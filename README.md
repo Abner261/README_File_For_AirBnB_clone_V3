@@ -14,7 +14,7 @@
 
 - REST API is a software architectural style for Backend.
 
-**REST = “REpresentational State Transfer”. API = Application Programming Interface**
+- **REST = “REpresentational State Transfer”. API = Application Programming Interface**
 
 - Its purpose is to induce performance, scalability, simplicity, modifiability, visibility, portability, and reliability.
 
@@ -33,6 +33,7 @@
 ### 1. Uniform Interface
 
 - Define the interface between client-server
+
 - Simple and can be split in small parts
 
 * **HTTP verbs**
@@ -204,6 +205,7 @@ $ pip3 install Flask
 	- Add yourself as an author of the project
 	- Add new information about your new contribution
 	- Make it better!
+
 * If you’re the owner of this codebase, create a new repository called `AirBnB_clone_v3` and copy over all files from `AirBnB_clone_v2`
 
 * **Repo:**
@@ -294,6 +296,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 **Repo:**
 
 - GitHub repository: `AirBnB_clone_v3`
+
 - File: `models/engine/db_storage.py, models/engine/file_storage.py, tests/test_models/test_engine/test_db_storage.py, tests/test_models/test_engine/test_file_storage.py`
 
 3. [Status of your API]()
@@ -308,7 +311,7 @@ guillaume@ubuntu:~/AirBnB_v3$ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_p
 ...
 ```
 
-In another terminal:
+- In another terminal:
 
 ```sh
 guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/status
@@ -373,7 +376,7 @@ threaded=True
 
 4. [Some stats?]()
 
-Create an endpoint that retrieves the number of each objects by type:
+- Create an endpoint that retrieves the number of each objects by type:
 
 - In `api/v1/views/index.py`
 

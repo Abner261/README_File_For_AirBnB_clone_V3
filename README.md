@@ -606,9 +606,9 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Creates a City: POST `/api/v1/states/<state_id>/cities`
 
-- You must use request.get_json from Flask to transform the HTTP body request to a dictionary
+- You must use `request.get_json` from Flask to transform the HTTP body request to a dictionary
 
-- If the state_id is not linked to any State object, raise a 404 error
+- If the `state_id` is not linked to any State object, raise a 404 error
 
 - If the HTTP body request is not a valid JSON, raise a 400 error with the message Not a JSON
 
@@ -626,7 +626,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Update the City object with all key-value pairs of the dictionary
 
-- Ignore keys: id, `state_id`, `created_at` and `updated_at`
+- Ignore keys: `id`, `state_id`, `created_at` and `updated_at`
 
 - Returns the City object with the status code 200
 
@@ -745,7 +745,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - In the file `api/v1/views/amenities.py`
 
-- You must use to_dict() to serialize an object into valid JSON
+- You must use `to_dict()` to serialize an object into valid JSON
 
 - Update `api/v1/views/__init__.py` to import this new file
 
@@ -753,17 +753,17 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Retrieves a Amenity object: `GET /api/v1/amenities/<amenity_id>`
 
-- If the amenity_id is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
 
-- Deletes a Amenity object:: DELETE /api/v1/amenities/<amenity_id>
+- Deletes a Amenity object:: DELETE `/api/v1/amenities/<amenity_id>`
 
-- If the amenity_id is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
 
 - Returns an empty dictionary with the status code 200
 
 - Creates a Amenity: POST `/api/v1/amenities`
 
-- You must use request.get_json from Flask to transform the HTTP request to a dictionary
+- You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 
 - If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
 
@@ -771,17 +771,17 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Returns the new Amenity with the status code 201
 
-- Updates a Amenity object: PUT /api/v1/amenities/<amenity_id>
+- Updates a Amenity object: PUT `/api/v1/amenities/<amenity_id>`
 
-- If the amenity_id is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
 
-- You must use request.get_json from Flask to transform the HTTP request to a dictionary
+- You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 
 - If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
 
 - Update the Amenity object with all key-value pairs of the dictionary
 
-- Ignore keys: id, created_at and updated_at
+- Ignore keys: id, `created_at` and `updated_at`
 
 - Returns the Amenity object with the status code 200
 

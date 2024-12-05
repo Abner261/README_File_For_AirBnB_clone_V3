@@ -824,17 +824,17 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Returns the new User with the status code 201
 
-- Updates a User object: PUT /api/v1/users/<user_id>
+- Updates a User object: PUT `/api/v1/users/<user_id>`
 
-- If the user_id is not linked to any User object, raise a 404 error
+- If the `user_id` is not linked to any User object, raise a 404 error
 
-- You must use request.get_json from Flask to transform the HTTP body request to a dictionary
+- You must use `request.get_json` from Flask to transform the HTTP body request to a dictionary
 
 - If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
 
 - Update the User object with all key-value pairs of the dictionary
 
-- Ignore keys: id, email, created_at and updated_at
+- Ignore keys: id, email, `created_at` and updated_at
 
 - Returns the User object with the status code 200
 
@@ -847,13 +847,13 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Create a new view for Place objects that handles all default RESTFul API actions:
 
-- In the file api/v1/views/places.py
+- In the file `api/v1/views/places.py`
 
-- You must use to_dict() to retrieve an object into a valid JSON
+- You must use `to_dict()` to retrieve an object into a valid JSON
 
-- Update api/v1/views/__init__.py to import this new file
+- Update `api/v1/views/__init__.py` to import this new file
 
-- Retrieves the list of all Place objects of a City: GET /api/v1/cities/<city_id>/places
+- Retrieves the list of all Place objects of a City: GET `/api/v1/cities/<city_id>/places`
 
 - If the `city_id` is not linked to any City object, raise a 404 error
 
@@ -869,9 +869,9 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Creates a Place: POST `/api/v1/cities/<city_id>/places`
 
-- You must use request.get_json from Flask to transform the HTTP request to a dictionary
+- You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 
-- If the city_id is not linked to any City object, raise a 404 error
+- If the `city_id` is not linked to any City object, raise a 404 error
 
 - If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
 

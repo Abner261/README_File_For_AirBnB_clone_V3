@@ -875,9 +875,9 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
 
-- If the dictionary doesn’t contain the key user_id, raise a 400 error with the message Missing user_id
+- If the dictionary doesn’t contain the key `user_id`, raise a 400 error with the message Missing `user_id`
 
-- If the user_id is not linked to any User object, raise a 404 error
+- If the `user_id` is not linked to any User object, raise a 404 error
 
 - If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
 
@@ -885,15 +885,15 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Updates a Place object: PUT `/api/v1/places/<place_id>`
 
-- If the place_id is not linked to any Place object, raise a 404 error
+- If the `place_id` is not linked to any Place object, raise a 404 error
 
-- You must use request.get_json from Flask to transform the HTTP request to a dictionary
+- You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 
 - If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
 
 - Update the Place object with all key-value pairs of the dictionary
 
-- Ignore keys: id, user_id, city_id, created_at and updated_at
+- Ignore keys: id, `user_id`, `city_id`, `created_at` and `updated_at`
 
 - Returns the Place object with the status code 200
 
@@ -928,9 +928,9 @@ Create a new view for Review object that handles all default RESTFul API actions
 
 - Creates a Review: POST `/api/v1/places/<place_id>/reviews`
 
-- You must use request.get_json from Flask to transform the HTTP request to a dictionary
+- You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 
-- If the place_id is not linked to any Place object, raise a 404 error
+- If the `place_id` is not linked to any Place object, raise a 404 error
 
 - If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
 

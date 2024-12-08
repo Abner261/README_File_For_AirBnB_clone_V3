@@ -975,11 +975,11 @@ Create a new view for Review object that handles all default RESTFul API actions
 
 - How to install it: $ pip3 install `flask_cors`
 
-- Update api/v1/app.py to create a CORS instance allowing: /* for 0.0.0.0
+- Update `api/v1/app.py` to create a CORS instance allowing: `/* for 0.0.0.0`
 
 - You will update it later when you will deploy your API to production.
 
-- Now you can see this HTTP Response Header: < Access-Control-Allow-Origin: 0.0.0.0
+- Now you can see this HTTP Response Header: < Access-Control-Allow-Origin: `0.0.0.0`
 
 ```sh
 guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/cities/1da255c0-f023-4779-8134-2b1b40f87683 -vvv
@@ -1023,7 +1023,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - In the file `api/v1/views/places_amenities.py`
 
-- You must use to_dict() to retrieve an object into a valid JSON
+- You must use `to_dict()` to retrieve an object into a valid JSON
 
 - Update `api/v1/views/__init__.py` to import this new file
 
@@ -1031,17 +1031,17 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - DBStorage: list, create and delete Amenity objects from amenities relationship
 
-- FileStorage: list, add and remove Amenity ID in the list amenity_ids of a Place object
+- FileStorage: list, add and remove Amenity ID in the list `amenity_ids` of a Place object
 
 - Retrieves the list of all Amenity objects of a Place: GET `/api/v1/places/<place_id>/amenities`
 
-- If the place_id is not linked to any Place object, raise a 404 error
+- If the `place_id` is not linked to any Place object, raise a 404 error
 
 - Deletes a Amenity object to a Place: DELETE `/api/v1/places/<place_id>/amenities/<amenity_id>`
 
-- If the place_id is not linked to any Place object, raise a 404 error
+- If the `place_id` is not linked to any Place object, raise a 404 error
 
-- If the amenity_id is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
 
 - If the Amenity is not linked to the Place before the request, raise a 404 error
 
@@ -1051,7 +1051,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - No HTTP body needed
 
-- If the place_id is not linked to any Place object, raise a 404 error
+- If the `place_id` is not linked to any Place object, raise a 404 error
 
 - If the amenity_id is not linked to any Amenity object, raise a 404 error
 

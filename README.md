@@ -1053,7 +1053,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - If the `place_id` is not linked to any Place object, raise a 404 error
 
-- If the amenity_id is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
 
 - If the Amenity is already linked to the Place, return the Amenity with the status code 200
 
@@ -1072,7 +1072,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - To avoid that, improve the User object:
 
-- Update the method to_dict() of BaseModel to remove the password key except when it’s used by FileStorage to save data to disk. Tips: default parameters
+- Update the method `to_dict()` of BaseModel to remove the password key except when it’s used by FileStorage to save data to disk. Tips: default parameters
 
 - Each time a new User object is created or password updated, the password is hashed to a MD5 value
 
@@ -1087,11 +1087,11 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 15. [Search]()
 
-- For the moment, the only way to list Place objects is via GET /api/v1/cities/<city_id>/places.
+- For the moment, the only way to list Place objects is via GET `/api/v1/cities/<city_id>/places`
 
 - Good, but not enough…
 
-- Update api/v1/views/places.py to add a new endpoint: POST /api/v1/places_search that retrieves all Place objects depending of the JSON in the body of the request.
+- Update `api/v1/views/places.py` to add a new endpoint: POST `/api/v1/places_search` that retrieves all Place objects depending of the JSON in the body of the request.
 
 - The JSON can contain 3 optional keys:
 

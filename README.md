@@ -1095,11 +1095,11 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - The JSON can contain 3 optional keys:
 
-- states: list of State ids
+- states: list of `State ids`
 
-- cities: list of City ids
+- cities: list of `City ids`
 
-- amenities: list of Amenity ids
+- amenities: list of `Amenity ids`
 
 - Search rules:
 

@@ -1076,7 +1076,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Each time a new User object is created or password updated, the password is hashed to a MD5 value
 
-- In the database for DBStorage, the password stored is now hashed to a MD5 value
+- In the database for `DBStorage`, the password stored is now hashed to a MD5 value
 
 - In the file for FileStorage, the password stored is now hashed to a MD5 value
 
@@ -1087,7 +1087,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 15. [Search]()
 
-- For the moment, the only way to list Place objects is via GET `/api/v1/cities/<city_id>/places`
+- For the moment, the only way to list Place objects is via `GET` `/api/v1/cities/<city_id>/places`
 
 - Good, but not enough…
 

@@ -1074,7 +1074,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Update the method `to_dict()` of BaseModel to remove the password key except when it’s used by FileStorage to save data to disk. Tips: default parameters
 
-- Each time a new User object is created or password updated, the password is hashed to a MD5 value
+- Each time a new User object is created or password updated, the password is hashed to a `MD5` value
 
 - In the database for `DBStorage`, the password stored is now hashed to a MD5 value
 

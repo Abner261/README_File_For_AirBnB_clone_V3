@@ -1076,9 +1076,9 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Each time a new User object is created or password updated, the password is hashed to a `MD5` value
 
-- In the database for `DBStorage`, the password stored is now hashed to a MD5 value
+- In the database for `DBStorage`, the password stored is now hashed to a `MD5` value
 
-- In the file for FileStorage, the password stored is now hashed to a MD5 value
+- In the file for FileStorage, the password stored is now hashed to a `MD5` value
 
 **Repo:**
 

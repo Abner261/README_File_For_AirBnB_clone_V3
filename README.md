@@ -1039,9 +1039,9 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Deletes a Amenity object to a Place: DELETE `/api/v1/places/<place_id>/amenities/<amenity_id>`
 
-- If the `place_id` is not linked to any Place object, raise a 404 error
+- If the `place_id` is not linked to any Place object, raise a `404` error
 
-- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a `404` error
 
 - If the Amenity is not linked to the Place before the request, raise a 404 error
 

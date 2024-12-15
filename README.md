@@ -1053,11 +1053,11 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - If the `place_id` is not linked to any Place object, raise a `404` error
 
-- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a `404` error
 
-- If the Amenity is already linked to the Place, return the Amenity with the status code 200
+- If the Amenity is already linked to the Place, return the Amenity with the status code `200`
 
-- Returns the Amenity with the status code 201
+- Returns the Amenity with the status code `201`
 
 **Repo:**
 

@@ -1035,7 +1035,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Retrieves the list of all Amenity objects of a Place: GET `/api/v1/places/<place_id>/amenities`
 
-- If the `place_id` is not linked to any Place object, raise a 404 error
+- If the `place_id` is not linked to any Place object, raise a `404` error
 
 - Deletes a Amenity object to a Place: DELETE `/api/v1/places/<place_id>/amenities/<amenity_id>`
 

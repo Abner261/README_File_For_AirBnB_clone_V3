@@ -948,13 +948,13 @@ Create a new view for Review object that handles all default RESTFul API actions
 
 - You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 
-- If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
+- If the HTTP request body is not valid JSON, raise a `400` error with the message Not a JSON
 
 - Update the Review object with all key-value pairs of the dictionary
 
 - Ignore keys: `id`, `user_id`, `place_id`, `created_at` and `updated_at`
 
-- Returns the Review object with the status code 200
+- Returns the Review object with the status code `200`
 
 **Repo:**
 

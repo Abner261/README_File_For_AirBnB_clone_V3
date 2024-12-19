@@ -936,11 +936,11 @@ Create a new view for Review object that handles all default RESTFul API actions
 
 - If the dictionary doesn’t contain the key `user_id`, raise a 400 error with the message Missing `user_id`
 
-- If the `user_id` is not linked to any User object, raise a 404 error
+- If the `user_id` is not linked to any User object, raise a `404` error
 
-- If the dictionary doesn’t contain the key text, raise a 400 error with the message Missing text
+- If the dictionary doesn’t contain the key text, raise a `400` error with the message Missing text
 
-- Returns the new Review with the status code 201
+- Returns the new Review with the status code `201`
 
 - Updates a Review object: PUT `/api/v1/reviews/<review_id>`
 

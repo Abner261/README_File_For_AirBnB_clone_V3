@@ -904,7 +904,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 11. [Reviews]()
 
-Create a new view for Review object that handles all default RESTFul API actions:
+* Create a new view for Review object that handles all default RESTFul API actions:
 
 - In the file `api/v1/views/places_reviews.py`
 
@@ -914,11 +914,11 @@ Create a new view for Review object that handles all default RESTFul API actions
 
 - Retrieves the list of all Review objects of a Place: GET `/api/v1/places/<place_id>/reviews`
 
-- If the `place_id` is not linked to any Place object, raise a 404 error
+- If the `place_id` is not linked to any Place object, raise a `404` error
 
 - Retrieves a Review object. : `GET /api/v1/reviews/<review_id>`
 
-- If the `review_id` is not linked to any Review object, raise a 404 error
+- If the `review_id` is not linked to any Review object, raise a `404` error
 
 - Deletes a Review object: `DELETE /api/v1/reviews/<review_id>`
 

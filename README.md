@@ -877,9 +877,9 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - If the dictionary doesn’t contain the key `user_id`, raise a 400 error with the message Missing `user_id`
 
-- If the `user_id` is not linked to any User object, raise a 404 error
+- If the `user_id` is not linked to any User object, raise a `404` error
 
-- If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
+- If the dictionary doesn’t contain the key name, raise a `400` error with the message Missing name
 
 - Returns the new Place with the status code `201`
 

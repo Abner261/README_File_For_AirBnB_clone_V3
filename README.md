@@ -865,17 +865,17 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - If the place_id is not linked to any Place object, raise a 404 error
 
-- Returns an empty dictionary with the status code 200
+- Returns an empty dictionary with the status code `200`
 
 - Creates a Place: POST `/api/v1/cities/<city_id>/places`
 
 - You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 
-- If the `city_id` is not linked to any City object, raise a 404 error
+- If the `city_id` is not linked to any City object, raise a `404` error
 
-- If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
+- If the HTTP request body is not valid JSON, raise a `400` error with the message Not a JSON
 
-- If the dictionary doesn’t contain the key `user_id`, raise a 400 error with the message Missing `user_id`
+- If the dictionary doesn’t contain the key `user_id`, raise a `400` error with the message Missing `user_id`
 
 - If the `user_id` is not linked to any User object, raise a `404` error
 

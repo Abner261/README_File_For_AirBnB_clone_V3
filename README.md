@@ -855,7 +855,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Retrieves the list of all Place objects of a City: GET `/api/v1/cities/<city_id>/places`
 
-- If the `city_id` is not linked to any City object, raise a 404 error
+- If the `city_id` is not linked to any City object, raise a `404` error
 
 - Retrieves a Place object. : GET `/api/v1/places/<place_id>`
 
@@ -863,7 +863,7 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Deletes a Place object: DELETE `/api/v1/places/<place_id>`
 
-- If the place_id is not linked to any Place object, raise a 404 error
+- If the place_id is not linked to any Place object, raise a `404` error
 
 - Returns an empty dictionary with the status code `200`
 

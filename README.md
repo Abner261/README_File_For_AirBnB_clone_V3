@@ -834,9 +834,9 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Update the User object with all key-value pairs of the dictionary
 
-- Ignore keys: id, email, `created_at` and updated_at
+- Ignore keys: id, email, `created_at` and `updated_at`
 
-- Returns the User object with the status code 200
+- Returns the User object with the status code `200`
 
 **Repo:**
 

@@ -777,13 +777,13 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 
-- If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
+- If the HTTP request body is not valid JSON, raise a `400` error with the message Not a JSON
 
 - Update the Amenity object with all key-value pairs of the dictionary
 
 - Ignore keys: id, `created_at` and `updated_at`
 
-- Returns the Amenity object with the status code 200
+- Returns the Amenity object with the status code `200`
 
 **Repo:**
 

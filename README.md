@@ -769,11 +769,11 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
 
-- Returns the new Amenity with the status code 201
+- Returns the new Amenity with the status code `201`
 
 - Updates a Amenity object: PUT `/api/v1/amenities/<amenity_id>`
 
-- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a `404` error
 
 - You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 

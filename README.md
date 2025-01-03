@@ -759,15 +759,15 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - If the `amenity_id` is not linked to any Amenity object, raise a 404 error
 
-- Returns an empty dictionary with the status code 200
+- Returns an empty dictionary with the status code `200`
 
 - Creates a Amenity: POST `/api/v1/amenities`
 
 - You must use `request.get_json` from Flask to transform the HTTP request to a dictionary
 
-- If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
+- If the HTTP request body is not valid JSON, raise a `400` error with the message Not a JSON
 
-- If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
+- If the dictionary doesn’t contain the key name, raise a `400` error with the message Missing name
 
 - Returns the new Amenity with the status code `201`
 

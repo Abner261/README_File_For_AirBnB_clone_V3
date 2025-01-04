@@ -753,11 +753,11 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Retrieves a Amenity object: `GET /api/v1/amenities/<amenity_id>`
 
-- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a `404` error
 
 - Deletes a Amenity object:: DELETE `/api/v1/amenities/<amenity_id>`
 
-- If the `amenity_id` is not linked to any Amenity object, raise a 404 error
+- If the `amenity_id` is not linked to any Amenity object, raise a `404` error
 
 - Returns an empty dictionary with the status code `200`
 

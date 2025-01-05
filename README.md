@@ -618,17 +618,17 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Updates a City object: PUT `/api/v1/cities/<city_id>`
 
-- If the `city_id` is not linked to any City object, raise a 404 error
+- If the `city_id` is not linked to any City object, raise a `404` error
 
 - You must use `request.get_json` from Flask to transform the HTTP body request to a dictionary
 
-- If the HTTP request body is not valid JSON, raise a 400 error with the message Not a JSON
+- If the HTTP request body is not valid JSON, raise a `400` error with the message Not a JSON
 
 - Update the City object with all key-value pairs of the dictionary
 
 - Ignore keys: `id`, `state_id`, `created_at` and `updated_at`
 
-- Returns the City object with the status code 200
+- Returns the City object with the status code `200`
 
 ```sh
 guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/states/not_an_id/cities/

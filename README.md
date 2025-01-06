@@ -610,11 +610,11 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - If the `state_id` is not linked to any State object, raise a 404 error
 
-- If the HTTP body request is not a valid JSON, raise a 400 error with the message Not a JSON
+- If the HTTP body request is not a valid JSON, raise a `400` error with the message Not a JSON
 
-- If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
+- If the dictionary doesn’t contain the key name, raise a `400` error with the message Missing name
 
-- Returns the new City with the status code 201
+- Returns the new City with the status code `201`
 
 - Updates a City object: PUT `/api/v1/cities/<city_id>`
 

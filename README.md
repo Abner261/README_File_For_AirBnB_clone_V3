@@ -600,15 +600,15 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Deletes a City object: DELETE `/api/v1/cities/<city_id>`
 
-- If the `city_id` is not linked to any City object, raise a 404 error
+- If the `city_id` is not linked to any City object, raise a `404` error
 
-- Returns an empty dictionary with the status code 200
+- Returns an empty dictionary with the status code `200`
 
 - Creates a City: POST `/api/v1/states/<state_id>/cities`
 
 - You must use `request.get_json` from Flask to transform the HTTP body request to a dictionary
 
-- If the `state_id` is not linked to any State object, raise a 404 error
+- If the `state_id` is not linked to any State object, raise a `404` error
 
 - If the HTTP body request is not a valid JSON, raise a `400` error with the message Not a JSON
 

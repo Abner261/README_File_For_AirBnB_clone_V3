@@ -592,11 +592,11 @@ guillaume@ubuntu:~/AirBnB_v3$
 
 - Retrieves the list of all City objects of a State: GET `/api/v1/states/<state_id>/cities`
 
-- If the `state_id` is not linked to any State object, raise a 404 error
+- If the `state_id` is not linked to any State object, raise a `404` error
 
 - Retrieves a City object. : GET `/api/v1/cities/<city_id>`
 
-- If the `city_id` is not linked to any City object, raise a 404 error
+- If the `city_id` is not linked to any City object, raise a `404` error
 
 - Deletes a City object: DELETE `/api/v1/cities/<city_id>`
 

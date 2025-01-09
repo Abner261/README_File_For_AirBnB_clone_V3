@@ -478,17 +478,17 @@ Create a new view for State objects that handles all default RESTFul API actions
 
 - Updates a State object: PUT `/api/v1/states/<state_id>`
 
-- If the `state_id` is not linked to any State object, raise a 404 error
+- If the `state_id` is not linked to any State object, raise a `404` error
 
 - You must use `request.get_json` from Flask to transform the HTTP body request to a dictionary
 
-- If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
+- If the HTTP body request is not valid JSON, raise a `400` error with the message Not a JSON
 
 - Update the State object with all `key-value` pairs of the dictionary.
 
 - Ignore keys: `id`, `created_at` and `updated_at`
 
-- Returns the State object with the status code 200
+- Returns the State object with the status code `200`
 
 ```sh
 guillaume@ubuntu:~/AirBnB_v3$ curl -X GET http://0.0.0.0:5000/api/v1/states/

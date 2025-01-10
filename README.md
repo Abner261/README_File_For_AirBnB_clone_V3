@@ -462,19 +462,19 @@ Create a new view for State objects that handles all default RESTFul API actions
 
 - Deletes a State object:: DELETE `/api/v1/states/<state_id>`
 
-- If the `state_id` is not linked to any State object, raise a 404 error
+- If the `state_id` is not linked to any State object, raise a `404` error
 
-- Returns an empty dictionary with the status code 200
+- Returns an empty dictionary with the status code `200`
 
 - Creates a State: POST `/api/v1/states`
 
 - You must use `request.get_json` from Flask to transform the HTTP body request to a dictionary
 
-- If the HTTP body request is not valid JSON, raise a 400 error with the message Not a JSON
+- If the HTTP body request is not valid JSON, raise a `400` error with the message Not a JSON
 
-- If the dictionary doesn’t contain the key name, raise a 400 error with the message Missing name
+- If the dictionary doesn’t contain the key name, raise a `400` error with the message Missing name
 
-- Returns the new State with the status code 201
+- Returns the new State with the status code `201`
 
 - Updates a State object: PUT `/api/v1/states/<state_id>`
 

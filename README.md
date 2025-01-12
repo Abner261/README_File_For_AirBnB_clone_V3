@@ -348,7 +348,7 @@ Ok, let starts:
 
 - inside if ` __name__ == "__main__":`, run your Flask server (variable app) with:
 
-- host = environment variable `HBNB_API_HOST` or 0.0.0.0 if not defined
+- host = environment variable `HBNB_API_HOST` or `0.0.0.0` if not defined
 
 - port = environment variable `HBNB_API_PORT` or 5000 if not defined
 threaded=True

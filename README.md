@@ -220,8 +220,8 @@ $ pip3 install Flask
 
 * At Holberton, we have a lot of tests, and they all pass! Just for the Intranet itself, there are:
 
-	- `5,213` assertions (as of 08/20/2018)
-	- `13,061` assertions (as of 01/25/2021)
+	- `5,213` assertions `(as of 08/20/2018)`
+	- `13,061` assertions `(as of 01/25/2021)`
 
 * The following requirements **must** be met for your project:
 

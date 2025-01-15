@@ -18,7 +18,7 @@
 
 - Its purpose is to induce performance, scalability, simplicity, modifiability, visibility, portability, and reliability.
 
-- REST API is **Resource-based**, a resource is an object and can be access by a URI. An object is “displayed”/transferred via a **representation** (typically JSON). HTTP methods will be actions on a resource.
+- REST API is **Resource-based**, a resource is an object and can be access by a `URI`. An object is “displayed”/transferred via a **representation** (typically JSON). HTTP methods will be actions on a resource.
 
 * Example:
 

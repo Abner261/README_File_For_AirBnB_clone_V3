@@ -6,7 +6,7 @@
 ![Webserver](https://img.shields.io/badge/Webserver-blue?style=for-the-badge)
 ![Flask](https://img.shields.io/badge/Flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 
-### Concepts
+## Concepts
 
 * **For this project, we expect you to look at these concepts:**
 
@@ -18,7 +18,7 @@
 
 - Its purpose is to induce performance, scalability, simplicity, modifiability, visibility, portability, and reliability.
 
-- REST API is **Resource-based**, a resource is an object and can be access by a `URI`. An object is “displayed”/transferred via a **representation** (typically JSON). HTTP methods will be actions on a resource.
+- REST API is **Resource-based**, a resource is an object and can be access by a `URI`. An object is “displayed”/transferred via a **representation** (typically JSON). `HTTP` methods will be actions on a resource.
 
 * Example:
 
@@ -54,7 +54,7 @@
 
 ### URIs - resource name
 
-* A resource representation is accessible by a URI:
+* A resource representation is accessible by a `URI`:
 
 	- `GET /users`: path for listing all user resources
 	- `GET /users/12`: path for the user `id = 12`

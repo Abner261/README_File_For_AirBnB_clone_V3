@@ -65,10 +65,10 @@
 
 ### HTTP Response
 
-* In the HTTP Response, the client should verify the information of two things:
+* In the `HTTP` Response, the client should verify the information of two things:
 
 	- status code: result of the action
-	- body: JSON or XML representation of resources
+	- body: `JSON` or `XML` representation of resources
 
 * Some important status code:
 

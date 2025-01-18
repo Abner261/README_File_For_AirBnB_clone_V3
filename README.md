@@ -83,9 +83,9 @@
 
 ### 2. Stateless
 
-- The server is independent of the client. The server doesn’t store user client information/state. Each request contains enough context to process it (HTTP Headers, etc.)
+- The server is independent of the client. The server doesn’t store user client `information/state`. Each request contains enough context to process it `(HTTP Headers, etc.)`
 
-- Some authentication systems like OAuth have to store information on the server side but they do it with REST API design.
+- Some authentication systems like OAuth have to store information on the server side but they do it with `REST API` design.
 
 ### 3. Cacheable
 

@@ -95,7 +95,7 @@
 	- Implicit
 	- Negotiated
 
-- Caches are here to improve performances. In a REST API, clients don’t care about the caching strategy, if the resource representation comes from a cache or from a database…
+- Caches are here to improve performances. In a `REST API`, clients don’t care about the caching strategy, if the resource representation comes from a cache or from a database…
 
 ### 4. Client-Server
 
@@ -136,8 +136,8 @@
 
 * **General**
 
-	- What REST means
-	- What API means
+	- What `REST` means
+	- What `API` means
 	- What CORS means
 	- What is an API
 	- What is a REST API
